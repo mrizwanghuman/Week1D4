@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.week1d4.Main2Activity">
+    <SeekBar
+        android:id="@+id/seekbarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:max="200000"/>
+
+    <TextView
+        android:id="@+id/trackSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40sp" />
+    <SeekBar
+        android:id="@+id/seekbarMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:max="60"/>
+    <TextView
+        android:id="@+id/trackMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_gravity="center" />
+    <EditText
+        android:id="@+id/percentageId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Type Interest Rate %"/>
+
+    <Button
+        android:onClick="calculateEmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Calculate"/>
+    <TextView
+        android:id="@+id/showResult"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:onClick="goPersonAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Person Activity"/>
+</LinearLayout>
